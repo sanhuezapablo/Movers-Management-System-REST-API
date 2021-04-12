@@ -1,0 +1,66 @@
+insert into COMPANY_DIVISIONS values(1, 'InvestFlow Technologies', 'Pablo', sysdate())
+insert into COMPANY_DIVISIONS values(2, 'MoversTech', 'Pablo', sysdate())
+
+insert into CUSTOMER_FILE values(1, '1994-05-01', 'nonya@gmail.com', 'John', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(2, '1995-01-02', 'queti@yahoo.com', 'Samantha', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(3, '1996-02-20', 'sam@example.com', 'Aldo', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(4, '1997-03-21', 'hello@gmail.com', 'Jessica', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(5, '1998-04-22', 'john.s@gmail.com', 'Gloria', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(6, '1999-04-22', 'la_jr_2@gmail.com', 'Mauricio', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(7, '2000-06-23', 'ksjjcj@example.com', 'Stephanie', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(8, '1993-07-24', 'pfjsj@gmail.com', 'Oscar', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(9, '1992-10-25', 'test@gmail.com', 'William', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(10, '1991-11-27', 'test@example.com', 'Sarah', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(11, '1990-12-10', 'test@gmail.com', 'Corby', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(12, '1980-03-11', 'test@state.gov', 'Marc', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(13, '1981-02-12', 'test@icloud.com', 'Claudia', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(14, '1982-09-13', 'test@aol.com', 'Test', 'FEMALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(15, '1983-08-14', 'test@example.com', 'Matthew', 'MALE', 'Doe', NULL, 1)
+insert into CUSTOMER_FILE values(16, '1994-07-15', 'test@gmail.com', 'Abigail', 'FEMALE', 'Doe', NULL, 1)
+
+insert into CUSTOMER_FILE values(17, '1984-05-01', 'nonya@gmail.com', 'John', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(18, '1985-01-02', 'queti@yahoo.com', 'Samantha', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(19, '1986-02-20', 'sam@example.com', 'Aldo', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(20, '1987-03-21', 'hello@gmail.com', 'Jessica', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(21, '1988-04-22', 'john.s@gmail.com', 'Gloria', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(22, '1989-04-22', 'la_jr_2@gmail.com', 'Mauricio', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(23, '1887-06-23', 'ksjjcj@example.com', 'Stephanie', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(24, '1983-07-24', 'pfjsj@gmail.com', 'Oscar', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(25, '1982-10-25', 'test@gmail.com', 'William', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(26, '1981-11-27', 'test@example.com', 'Sarah', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(27, '1980-12-10', 'test@gmail.com', 'Corby', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(28, '1960-03-11', 'test@state.gov', 'Marc', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(29, '1961-02-12', 'test@icloud.com', 'Claudia', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(30, '1962-09-13', 'test@aol.com', 'Test', 'FEMALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(31, '1963-08-14', 'test@example.com', 'Matthew', 'MALE', 'Doe', NULL, 2)
+insert into CUSTOMER_FILE values(32, '1964-07-15', 'test@gmail.com', 'Abigail', 'FEMALE', 'Doe', NULL, 2)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(1, '2021-03-21', 'Pack and Load', 'AIR', 'Air Vans', 'DOSLP3232U', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'PENDING', 'Pablo', sysdate(), 1)
+insert into LOCATION_ADDRESS values(1, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 1)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(2, '2021-03-21', 'Pack and Load', 'SEA', 'LiftVans', 'DOSLP3232H', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'COMPLETED', 'Pablo', sysdate(), 2)
+insert into LOCATION_ADDRESS values(2, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 2)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(3, '2021-03-21', 'Pack and Load', 'LAND', 'Vault', 'DOSLP3232S', 'Storage', 'Door to Origin Warehouse', '2021-03-21', 'PENDING', 'Pablo', sysdate(), 11)
+insert into LOCATION_ADDRESS values(3, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 3)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(4, '2021-03-21', 'Pack and Load', 'AIR', 'Air Vans', 'DOSLP3232U', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'PENDING', 'Pablo', sysdate(), 16)
+insert into LOCATION_ADDRESS values(4, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 4)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(5, '2021-03-21', 'Pack and Load', 'AIR', 'Air Vans', 'DOSLP3232U', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'COMPLETED', 'Pablo', sysdate(), 17)
+insert into LOCATION_ADDRESS values(5, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 5)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(6, '2021-03-21', 'Pack and Load', 'SEA', 'Lifvans', 'DOSLP3232H', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'PENDING', 'Pablo', sysdate(), 18)
+insert into LOCATION_ADDRESS values(6, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 6)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(7, '2021-03-21', 'Pack and Load', 'SEA', 'Liftvans', 'DOSLP3232H', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'COMPLETED', 'Pablo', sysdate(), 31)
+insert into LOCATION_ADDRESS values(7, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 7)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(8, '2021-03-21', 'Pack and Load', 'LAND', 'Vault', 'DOSLP3232S', 'Storage', 'Door to Origin Warehouse', '2021-03-21', 'PENDING', 'Pablo', sysdate(), 32)
+insert into LOCATION_ADDRESS values(8, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 8)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(9, '2021-03-21', 'Pack and Load', 'LAND', 'Vault', 'DOSLP3232S', 'Storage', 'Door to Origin Warehouse', '2021-03-21', 'COMPLETED', 'Pablo', sysdate(), 28)
+insert into LOCATION_ADDRESS values(9, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 9)
+
+insert into SHIPMENT (ID, END_DATE, JOB_TYPE, MODE, PACK_MODE, REGISTRATION_NUMBER, ROUTING, SERVICE, START_DATE, JOB_STATUS, UPDATED_BY, UPDATED_DATE_TIME, CUSTOMER_FILE_ID) values(10, '2021-03-21', 'Pack and Load', 'SEA', 'Liftvans', 'DOSLP3232L', 'Export', 'Door to Origin Warehouse', '2021-03-21', 'COMPLETED', 'Pablo', sysdate(), 29)
+insert into LOCATION_ADDRESS values(10, '123 Main Street', NULL, 'Washington DC', 'US', 20111, 'MD', 10)
